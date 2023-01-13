@@ -33,6 +33,7 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 80px;
+    flex-wrap: wrap;
 
 }
 
@@ -171,4 +172,11 @@ nav ul li a {
     font-size: 16px;
     line-height: 19px;
     color: #919191;
+}
+@media screen and (max-width:576px) {
+    .grid-photos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1px;
+    }
 }
